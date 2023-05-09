@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    background-color: #5c0d5c;
+    color: rgb(196, 182, 219);
+}
+
+li {
+    list-style-type: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.Game-Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+}
+
+.box:hover {
+    background-color: #d3c8c89d;
+}
+
+.game-info {
+    padding: 1vw 50px;
+    font-family: 'Merienda', cursive;
+
+}
+
+img {
+    width: 0;
+    transition: width 1s ease-in-out;
+
+}
+
+.bl {
+    border-left: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+button {
+    padding: 5px 35px;
+    background-color: #e6daec;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info {
+    font-size: 23px;
+    color: #5c0d5c;
+}
+
+footer {
+    color: aliceblue;
+    background-color: #272427d8;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .Game-Container {
+        flex-wrap: wrap;
+    }
+
+    .game-info {
+        margin-top: 25px;
+    }
+
+
+
+
+}
